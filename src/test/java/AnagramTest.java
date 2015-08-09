@@ -10,7 +10,7 @@ import static org.junit.Assert.assertTrue;
 
 
 /**
- * @author Joeri Leemans
+ * @author Pablo Perez
  */
 public class AnagramTest {
 
