@@ -26,5 +26,8 @@
         <module name="Anagram" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="algorithmics" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
