@@ -10,7 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8 74" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: com.welvi.sportscal:sportscal-backend-rest-test:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.welvi.sportscal:sportscal-backend-util:1.0.0-SNAPSHOT" level="project" />
