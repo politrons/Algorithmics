@@ -1,26 +1,20 @@
 
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.net.URL;
-import java.util.*;
-
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 
 /**
  * @author Pablo Perez
  */
-public class RevertStringTest {
+public class RevertTest {
 
 
     @Test
     public void oldFashionRevert() {
         String word="this is a test";
         char[] chars = word.toCharArray();
-        StringBuilder revertWord =  new StringBuilder();
+        final StringBuilder revertWord =  new StringBuilder();
         for(int i= chars.length ; i > 0 ; i--){
             char c = chars[i-1];
             revertWord.append(String.valueOf(c));
@@ -32,6 +26,17 @@ public class RevertStringTest {
     public void newFashionRevert() {
         String word="this is a test";
         assertTrue("tset a si siht".equals(new StringBuilder(word).reverse().toString()));
+    }
+
+    @Test
+    public void reverseNumber(){
+        int number = 17868;
+        int reverse = 0;
+        while(number != 0){
+            reverse = (reverse*10)+(number%10);
+            number = number/10;
+        }
+        System.out.println(reverse);
     }
 
 
