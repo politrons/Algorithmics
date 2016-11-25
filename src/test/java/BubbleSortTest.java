@@ -11,7 +11,6 @@ import static org.junit.Assert.assertThat;
  */
 public class BubbleSortTest {
 
-
     @Test
     public void descendingSort() {
         int[] numbers = {5, 3, 6, 1, 2};
@@ -26,8 +25,5 @@ public class BubbleSortTest {
             }
         }
         assertThat("[1,2,3,5,6]", is(Arrays.toString(numbers).trim()));
-
     }
-
-
 }

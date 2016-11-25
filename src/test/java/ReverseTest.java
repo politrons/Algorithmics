@@ -7,11 +7,11 @@ import static org.junit.Assert.assertTrue;
 /**
  * @author Pablo Perez
  */
-public class RevertTest {
+public class ReverseTest {
 
 
     @Test
-    public void oldFashionRevert() {
+    public void oldFashionReverse() {
         String word="this is a test";
         char[] chars = word.toCharArray();
         final StringBuilder revertWord =  new StringBuilder();
@@ -23,7 +23,7 @@ public class RevertTest {
     }
 
     @Test
-    public void newFashionRevert() {
+    public void newFashionReverse() {
         String word="this is a test";
         assertTrue("tset a si siht".equals(new StringBuilder(word).reverse().toString()));
     }
