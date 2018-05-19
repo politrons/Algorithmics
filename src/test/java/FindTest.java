@@ -66,9 +66,10 @@ public class FindTest {
         for (char c : text.toCharArray()) {
             dupChars.put(c, c);
         }
-        final List<Character> duplicates = dupChars.asMap().entrySet().stream()
+        List<String> duplicates = dupChars.asMap().entrySet().stream()
                 .filter(entry -> entry.getValue().size() > 1)
                 .map(Map.Entry::getKey)
+                .map(c -> String.valueOf(c.charValue()))
                 .collect(Collectors.toList());
         System.out.println(duplicates);
     }
@@ -82,13 +83,12 @@ public class FindTest {
         String text = "find duplicated words those words are duplicated here";
         final List<String> allWords = Arrays.asList(text.split(" "));
         Multimap<String, String> words = ArrayListMultimap.create();
-        allWords.stream()
-                .forEach(word -> words.put(word, word));
-        final List<String> duplicates = words.asMap().entrySet().stream()
+        allWords.forEach(word -> words.put(word, word));
+        List<String> duplicates = words.asMap().entrySet().stream()
                 .filter(entry -> entry.getValue().size() > 1)
                 .map(Map.Entry::getKey)
                 .collect(Collectors.toList());
-        System.out.println(duplicates.toString());
+        System.out.println(duplicates);
     }
 
     /**
@@ -96,12 +96,11 @@ public class FindTest {
      */
     @Test
     public void removeDuplicated() {
-        List<Character> uniques = Chars.asList("abcagtbx".toCharArray()).stream()
+        String collect = "abcagtbx".chars().mapToObj(c -> (char) c)
                 .distinct()
-                .collect(Collectors.toList());
-        StringBuilder builder = new StringBuilder();
-        uniques.forEach(builder::append);
-        System.out.println(builder.toString());
+                .map(String::valueOf)
+                .collect(Collectors.joining());
+        System.out.println(collect);
     }
 
     /**
@@ -113,7 +112,7 @@ public class FindTest {
         Arrays.sort(number);
         int centerNumber = number[number.length / 2];
         System.out.println(format("Center number %d", centerNumber));
-        System.out.printf(valueOf(number.length / 2));
+        System.out.println(valueOf(number.length / 2));
     }
 
     /**
@@ -138,13 +137,12 @@ public class FindTest {
         Multimap<Integer, Integer> multimap = ArrayListMultimap.create();
         final List<Integer> numbers = Arrays.asList(1, 1, 2, 3, 2, 1, 3, 4, 3, 3);
         numbers.forEach(number -> multimap.put(number, number));
-        multimap.asMap().entrySet().stream()
-                .forEach(entry -> {
-                    if (entry.getValue().size() > maxValue) {
-                        maxValue = entry.getValue().size();
-                        maxNumber = entry.getKey();
-                    }
-                });
+        multimap.asMap().forEach((key, value) -> {
+            if (value.size() > maxValue) {
+                maxValue = value.size();
+                maxNumber = key;
+            }
+        });
         System.out.println(maxNumber);
     }
 
@@ -166,8 +164,7 @@ public class FindTest {
     public void findUniqueElement() {
         Multimap<Integer, Integer> map = ArrayListMultimap.create();
         final List<Integer> numbers = Arrays.asList(1, 1, 3, 4, 4, 6, 6, 5);
-        numbers.stream()
-                .forEach(number -> map.put(number, number));
+        numbers.forEach(number -> map.put(number, number));
         final List<Integer> uniques = map.asMap().entrySet().stream()
                 .filter(entry -> entry.getValue().size() == 1)
                 .map(Map.Entry::getKey)
