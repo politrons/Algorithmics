@@ -44,6 +44,15 @@ public class FindTest {
         System.out.println(words);
     }
 
+    @Test
+    public void findNumberOfWordsEfficient() {
+        String text = "this is a test result should be 8.";
+        int words = text.chars().mapToObj(c -> (char)c)
+                .filter(c -> c == 32)
+                .collect(Collectors.toList()).size() + 1;
+        System.out.println(words);
+    }
+
     /**
      * Equation to find the number duplicated in the array
      */
