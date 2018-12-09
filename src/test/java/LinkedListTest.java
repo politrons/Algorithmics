@@ -1,9 +1,5 @@
 import org.junit.Test;
 
-import java.util.LinkedList;
-
-import static jdk.nashorn.internal.objects.Global.print;
-
 public class LinkedListTest {
 
 

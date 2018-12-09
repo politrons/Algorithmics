@@ -47,7 +47,7 @@ public class FindTest {
     @Test
     public void findNumberOfWordsEfficient() {
         String text = "this is a test result should be 8.";
-        int words = text.chars().mapToObj(c -> (char)c)
+        int words = text.chars().mapToObj(c -> (char) c)
                 .filter(c -> c == 32)
                 .collect(Collectors.toList()).size() + 1;
         System.out.println(words);
@@ -180,5 +180,46 @@ public class FindTest {
                 .collect(Collectors.toList());
         System.out.println(uniques);
     }
+
+    @Test
+    public void searchBinarySearch() {
+        int number[] = {10, 20, 30, 40, 50, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        System.out.println(searchBinarySearch(number, 40));
+    }
+
+    public int searchBinarySearch(int[] nums, int target) {
+        int low = 0, high = nums.length - 1;
+        while (low <= high) {
+            int middle = low + (high - low) / 2;
+            // If the middle element matches the target, simply return middle Index.
+            if (nums[middle] == target)
+                return middle;
+            // If the sequence, low to mid is increasing.
+            if (nums[low] <= nums[middle]) {
+                // As my low to mid seq is increasing, and If the target is bigger than mid, then I cannot
+                //have my target b/w low to mid, process right half. Similar case for if the target is
+                // lesser than low.
+                if (target < nums[low] || target > nums[middle])
+                    low = middle + 1;
+                // else process the left half.
+                else
+                    high = middle - 1;
+            }
+            // If the sequence mid to hi is increasing.
+            else {
+                // As the sequcence mid to Hi is increasing, and If the  target is bigger than Hi or
+                // lesser than Mid,  It cannot be in the right half. so Process left.
+                if (target > nums[high] || target < nums[middle])
+                    high = middle - 1;
+                // Else process right.
+                else
+                    low = middle + 1;
+            }
+        }
+        // Element not found.
+        return -1;
+    }
+
+
 
 }
