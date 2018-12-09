@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e66a28fb-6d8c-4a4d-ad44-559c97e48745" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GFG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Islands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Palindrome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e66a28fb-6d8c-4a4d-ad44-559c97e48745" name="Default" comment="refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Solution.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,12 +32,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1179" />
+          <entry key="java" value="1810" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1179" />
+          <entry key="JAVA" value="1810" />
         </counts>
       </usages-collector>
     </session>
@@ -113,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="330">
+              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -283,7 +274,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544358118649" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544381109332" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -419,38 +410,45 @@
       <option name="project" value="LOCAL" />
       <updated>1528464667059</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor">
+      <created>1544358130279</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544358130279</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 09m 20s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 34m 20s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 10m 03s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 34m 25s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 11m 16s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 34m 31s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 12m 30s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 35m 39s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 13m 15s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 36m 15s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 13m 25s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 36m 26s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 13m 34s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 38m 32s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 13m 41s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 38m 39s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 17m 34s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 41m 31s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Solution_runSolution - 2018.12.09 at 12h 19m 24s.xml">
+    <history-entry file="Solution_runSolution - 2018.12.09 at 18h 41m 45s.xml">
       <configuration name="Solution.runSolution" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -842,8 +840,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="330">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
